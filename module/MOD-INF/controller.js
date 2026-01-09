@@ -39,6 +39,8 @@ var ClientSideResourceManager = Packages.com.google.refine.ClientSideResourceMan
  * Function invoked to initialize the extension.
  */
 function init() {
+  // console is not provided in butterfly
+  // console.log("hello from or-extension-lab");
   // Script files to inject into /project page
   ClientSideResourceManager.addPaths(
     "project/scripts",
@@ -56,6 +58,8 @@ function init() {
       "styles/project-injection.css"
     ]
   );
+
+  // throw new Error("what happens now?");
 
   // Here you can register all sorts of server-side components following the extension points listed in:
   // https://openrefine.org/docs/technical-reference/writing-extensions#server-side-ajax-commands
